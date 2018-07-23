@@ -48,7 +48,9 @@ abstract class AProduct {
 }
 
 interface IChartProduct {
-    static IChartProduct getChart(String type) {
+    public static final String myName = "IChart";
+    
+    public static IChartProduct getChart(String type) {
         IChartProduct result;
         switch (type) {
             case "A":
@@ -61,7 +63,7 @@ interface IChartProduct {
         return result;
     }
     
-    void display();
+    public abstract void display();
 }
 
 class LineAProduct extends AProduct {

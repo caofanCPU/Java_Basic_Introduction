@@ -10,7 +10,7 @@ public class OptimizedSimpleFactoryPatternTest {
         IChartProduct iFactory = IChartProduct.getChart("B");
         iFactory.display();
         
-        // 静态工厂放在抽象类中
+        // 静态工厂放在抽象父类中
         AProduct aFactory = AProduct.getProduct("A");
         aFactory.show();
     }
